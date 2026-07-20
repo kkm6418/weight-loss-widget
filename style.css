@@ -50,11 +50,11 @@ body{
 
 .circle-progress{
     fill:none;
-    stroke:url(#gradient);
     stroke:#ff7eb3;
     stroke-width:12;
     stroke-linecap:round;
     transition:stroke-dashoffset .8s ease;
+    filter:drop-shadow(0 0 8px rgba(255,126,179,0.8));
 }
 
 
