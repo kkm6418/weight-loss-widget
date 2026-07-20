@@ -1,64 +1,49 @@
-// ===== CHANGE ONLY THESE VALUES =====
+// Weight Loss Settings
+const startingWeight = 252.6; // Change this to your starting weight
+const currentWeight = 174.2;  // Change this to your current weight
+const goalWeight = 130;     // Change this to your goal weight
 
-const startWeight = 252.6;
-const currentWeight = 174.2;
-const goalWeight = 130;
+const startDate = new Date("2026-07-20"); // Change this to your start date
 
-const startDate = "2026-07-20";
 
-// ================================
+// Calculate progress
+const totalToLose = startingWeight - goalWeight;
+const lost = startingWeight - currentWeight;
 
-// Days since starting
+let progress = (lost / totalToLose) * 100;
+
+// Keep progress between 0-100
+progress = Math.max(0, Math.min(progress, 100));
+
+
+// Update text
+document.getElementById("weight").innerHTML =
+    `${currentWeight} lbs`;
+
+document.getElementById("percent").innerHTML =
+    `${Math.round(progress)}%`;
+
+document.getElementById("lost").innerHTML =
+    `${lost} lbs lost`;
+
+
+// Calculate days since start
 const today = new Date();
-const started = new Date(startDate);
+const difference = today - startDate;
+const days = Math.floor(difference / (1000 * 60 * 60 * 24));
 
-const days = Math.floor(
-    (today - started) / (1000 * 60 * 60 * 24)
-);
+document.getElementById("days").innerHTML =
+    `Day ${days} since start`;
 
-// Weight calculations
-const totalToLose = startWeight - goalWeight;
-const lost = startWeight - currentWeight;
-const remaining = currentWeight - goalWeight;
 
-const percent = Math.max(
-    0,
-    Math.min(
-        100,
-        Math.round((lost / totalToLose) * 100)
-    )
-);
+// Circular progress ring
+const circle = document.getElementById("progress-ring");
 
-// Update page
-document.getElementById("weight").textContent =
-`${currentWeight.toFixed(1)} lb`;
+const radius = circle.r.baseVal.value;
+const circumference = 2 * Math.PI * radius;
 
-document.getElementById("percent").textContent =
-`${percent}% Complete`;
+circle.style.strokeDasharray = circumference;
 
-document.getElementById("days").textContent =
-`Day ${days}`;
+const offset = circumference - (progress / 100) * circumference;
 
-document.getElementById("lost").textContent =
-`${lost.toFixed(1)} lb lost • ${remaining.toFixed(1)} lb to go`;
-
-const fill = document.getElementById("fill");
-
-fill.style.width = percent + "%";
-
-// Progress bar colors
-if (percent < 25) {
-    fill.style.background = "#FF3B30";   // Red
-}
-else if (percent < 50) {
-    fill.style.background = "#FF9500";   // Orange
-}
-else if (percent < 75) {
-    fill.style.background = "#FFD60A";   // Yellow
-}
-else if (percent < 100) {
-    fill.style.background = "#34C759";   // Green
-}
-else {
-    fill.style.background = "#0A84FF";   // Blue
-}
+circle.style.strokeDashoffset = offset;
