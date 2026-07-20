@@ -15,13 +15,12 @@ body{
 }
 
 .widget{
-    width:320px;
-    padding:24px 20px 26px;
-    text-align:center;
-    background:rgba(255,255,255,0.06);
-    border-radius:32px;
-    border:1px solid rgba(255,215,0,0.2);
-    backdrop-filter:blur(16px);
+    width:440px;
+    min-height:200px;
+    padding:22px 26px;
+    display:flex;
+    flex-direction:column;
+    justify-content:space-between;
 }
 
 
@@ -340,4 +339,10 @@ body{
     font-size:15px;
     font-weight:700;
     white-space:nowrap;
+}
+.main-row{
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    flex:1;
 }
