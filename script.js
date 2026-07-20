@@ -33,7 +33,10 @@ const difference = today - startDate;
 const days = Math.floor(difference / (1000 * 60 * 60 * 24));
 
 document.getElementById("days").innerHTML =
-    `Day ${days} since start`;
+    `Day ${days}`;
+
+document.getElementById("start-date").innerHTML =
+    `since ${formattedDate}`;
 
 
 // Circular progress ring
