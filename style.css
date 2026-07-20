@@ -161,71 +161,45 @@ body{
 }
 
 .calendar-icon{
-    width:30px;
-    height:30px;
+    width:28px;
+    height:26px;
     margin:0 auto 8px;
-    border-radius:8px;
-    background:#ff6fa8;
+    border:2px solid #ff6fa8;
+    border-radius:7px;
     position:relative;
-    box-shadow:0 0 12px rgba(255,105,180,0.55);
+    background:transparent;
+    box-shadow:0 0 8px rgba(255,111,168,0.45);
 }
 
+/* calendar top rings */
 .calendar-icon::before,
 .calendar-icon::after{
     content:"";
     position:absolute;
-    top:-5px;
+    top:-6px;
     width:5px;
     height:10px;
+    border:2px solid #ff6fa8;
     border-radius:4px;
-    background:#ffb6d2;
+    background:#000;
 }
 
 .calendar-icon::before{
-    left:8px;
+    left:6px;
 }
 
 .calendar-icon::after{
-    right:8px;
+    right:6px;
 }
 
-.calendar-top{
-    position:absolute;
-    left:5px;
-    right:5px;
-    top:10px;
-    height:2px;
-    background:rgba(255,255,255,.75);
-}
-
-/* calendar binding rings */
-.calendar-icon::before,
-.calendar-icon::after{
-    content:"";
-    position:absolute;
-    top:-4px;
-    width:5px;
-    height:9px;
-    background:#FFD700;
-    border-radius:3px;
-}
-
-.calendar-icon::before{
-    left:7px;
-}
-
-.calendar-icon::after{
-    right:7px;
-}
-
-/* calendar detail */
+/* calendar divider */
 .calendar-icon span{
     position:absolute;
-    left:6px;
-    right:6px;
-    top:9px;
-    height:2px;
-    background:rgba(255,255,255,0.8);
+    left:4px;
+    right:4px;
+    top:8px;
+    height:1px;
+    background:#ff6fa8;
 }
 
 .days{
