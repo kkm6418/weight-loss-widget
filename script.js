@@ -1,5 +1,6 @@
 // ===== CHANGE ONLY THESE VALUES =====
 
+const startWeight = 252.6;
 const currentWeight = 174.2;
 const goalWeight = 130;
 
