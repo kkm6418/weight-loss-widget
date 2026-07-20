@@ -16,21 +16,21 @@ body{
 
 .widget{
     width:320px;
-    padding:28px;
+    padding:24px 20px 26px;
     text-align:center;
-    background:rgba(255,255,255,0.05);
-    border-radius:28px;
-    border:1px solid rgba(255,215,0,0.18);
-    backdrop-filter:blur(12px);
+    background:rgba(255,255,255,0.06);
+    border-radius:32px;
+    border:1px solid rgba(255,215,0,0.2);
+    backdrop-filter:blur(16px);
 }
 
 
 /* Circular Progress Ring */
 
 .ring{
-    width:190px;
-    height:190px;
-    margin:0 auto 24px;
+    width:180px;
+    height:180px;
+    margin:0 auto 20px;
     position:relative;
 }
 
@@ -92,10 +92,10 @@ body{
 /* Weight */
 
 .weight{
-    font-size:48px;
-    font-weight:700;
-    letter-spacing:-2px;
-    margin-bottom:12px;
+    font-size:44px;
+    font-weight:750;
+    letter-spacing:-1.5px;
+    margin-bottom:8px;
 }
 
 
@@ -111,13 +111,25 @@ body{
 
 .days,
 .lost{
-    color:#8E8E93;
-    font-size:17px;
-    margin-top:6px;
+    color:#98989F;
+    font-size:15px;
+    margin-top:5px;
+    letter-spacing:-0.2px;
 }
 .milestone{
     margin-top:12px;
     font-size:15px;
     color:#FFD700;
     font-weight:600;
+}
+.ring::after{
+    content:"";
+    position:absolute;
+    width:120px;
+    height:20px;
+    bottom:-10px;
+    left:50%;
+    transform:translateX(-50%);
+    background:rgba(255,215,0,0.15);
+    filter:blur(20px);
 }
