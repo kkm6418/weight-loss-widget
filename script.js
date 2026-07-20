@@ -18,7 +18,7 @@ progress = Math.max(0, Math.min(progress, 100));
 
 // Update text
 document.getElementById("weight").innerHTML =
-    `${currentWeight} lbs`;
+    `${currentWeight.toFixed(1)} lbs`;
 
 document.getElementById("percent").innerHTML =
     `${Math.round(progress)}%`;
@@ -92,10 +92,10 @@ else {
     milestone.innerHTML = "🌱 Your journey begins";
 }
 document.getElementById("starting-weight").innerHTML =
-    `${startingWeight} lbs`;
+    `${startingWeight.toFixed(1)} lbs`;
 
 document.getElementById("goal-weight").innerHTML =
-    `${goalWeight} lbs`;
+    `${goalWeight.toFixed(1)} lbs`;
 
 document.getElementById("to-go").innerHTML =
-    `${currentWeight - goalWeight} lbs`;
+    `${(currentWeight - goalWeight).toFixed(1)} lbs`;
