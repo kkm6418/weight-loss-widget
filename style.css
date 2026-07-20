@@ -53,7 +53,7 @@ body{
 
 .circle-progress{
     fill:none;
-    stroke:#ff7eb3;
+    stroke:#FFD700;
     stroke-width:12;
     stroke-linecap:round;
     transition:stroke-dashoffset .8s ease;
