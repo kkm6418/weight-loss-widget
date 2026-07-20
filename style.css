@@ -161,15 +161,41 @@ body{
 }
 
 .calendar-icon{
-    width:28px;
-    height:24px;
+    width:30px;
+    height:30px;
     margin:0 auto 8px;
+    border-radius:8px;
     background:#ff6fa8;
-    border-radius:7px;
     position:relative;
-    box-shadow:
-        0 0 10px rgba(255,105,180,0.7),
-        inset 0 -3px rgba(255,255,255,0.15);
+    box-shadow:0 0 12px rgba(255,105,180,0.55);
+}
+
+.calendar-icon::before,
+.calendar-icon::after{
+    content:"";
+    position:absolute;
+    top:-5px;
+    width:5px;
+    height:10px;
+    border-radius:4px;
+    background:#ffb6d2;
+}
+
+.calendar-icon::before{
+    left:8px;
+}
+
+.calendar-icon::after{
+    right:8px;
+}
+
+.calendar-top{
+    position:absolute;
+    left:5px;
+    right:5px;
+    top:10px;
+    height:2px;
+    background:rgba(255,255,255,.75);
 }
 
 /* calendar binding rings */
