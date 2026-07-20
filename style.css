@@ -212,3 +212,12 @@ body{
     font-size:14px;
     margin-top:2px;
 }
+.loss-section{
+    text-align:center;
+}
+
+.loss-label{
+    color:#98989F;
+    font-size:14px;
+    margin-top:3px;
+}
