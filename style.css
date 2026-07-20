@@ -18,6 +18,10 @@ body{
     width:320px;
     padding:28px;
     text-align:center;
+    background:rgba(255,255,255,0.05);
+    border-radius:28px;
+    border:1px solid rgba(255,215,0,0.18);
+    backdrop-filter:blur(12px);
 }
 
 
@@ -54,7 +58,9 @@ body{
     stroke-width:12;
     stroke-linecap:round;
     transition:stroke-dashoffset .8s ease;
-    filter:drop-shadow(0 0 8px rgba(255,126,179,0.8));
+  filter:
+    drop-shadow(0 0 8px rgba(255,126,179,0.8))
+    drop-shadow(0 0 12px rgba(255,215,0,0.45));
 }
 
 
@@ -68,9 +74,12 @@ body{
 }
 
 .percent{
-    font-size:34px;
-    font-weight:700;
+    font-size:36px;
+    font-weight:800;
     letter-spacing:-1px;
+    background:linear-gradient(135deg,#ff9a9e,#FFD700);
+    -webkit-background-clip:text;
+    -webkit-text-fill-color:transparent;
 }
 
 .label{
