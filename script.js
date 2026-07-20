@@ -1,6 +1,6 @@
 // Weight Loss Settings
 const startingWeight = 252.6; // Change this to your starting weight
-const currentWeight = 140;  // Change this to your current weight
+const currentWeight = 174.2;  // Change this to your current weight
 const goalWeight = 130;     // Change this to your goal weight
 
 const startDate = new Date("2026-07-20"); // Change this to your start date
