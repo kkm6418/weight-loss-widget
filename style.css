@@ -5,7 +5,7 @@
 }
 
 body{
-    background:#000;
+    background:linear-gradient(145deg, #0B3D2E, #0F6B4F);
     color:white;
     font-family:-apple-system, BlinkMacSystemFont, "SF Pro Display", sans-serif;
     display:flex;
