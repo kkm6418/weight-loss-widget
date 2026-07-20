@@ -301,8 +301,9 @@ body{
 }
 
 .goal-label{
-    color:#98989F;
+    color:#FFD700;
     font-size:13px;
+    font-weight:600;
     margin-bottom:5px;
 }
 
