@@ -133,3 +133,25 @@ body{
     background:rgba(255,215,0,0.15);
     filter:blur(20px);
 }
+.crown{
+    font-size:24px;
+    margin-bottom:4px;
+}
+
+.ring-weight{
+    font-size:34px;
+    font-weight:800;
+    letter-spacing:-1px;
+    line-height:1;
+}
+
+.ring-percent{
+    font-size:18px;
+    font-weight:600;
+    margin-top:6px;
+    color:#FFD700;
+}
+
+.ring-content{
+    width:140px;
+}
