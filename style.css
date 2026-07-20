@@ -221,3 +221,32 @@ body{
     font-size:14px;
     margin-top:3px;
 }
+.stats-row{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    margin-top:22px;
+    padding:0 18px;
+}
+
+.date-section,
+.loss-section{
+    text-align:center;
+}
+
+.loss-section{
+    min-width:90px;
+}
+
+.lost{
+    font-size:22px;
+    font-weight:700;
+    color:white;
+    letter-spacing:-0.5px;
+}
+
+.loss-label{
+    color:#98989F;
+    font-size:14px;
+    margin-top:3px;
+}
