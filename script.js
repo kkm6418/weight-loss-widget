@@ -91,3 +91,11 @@ else if (lost >= 10) {
 else {
     milestone.innerHTML = "🌱 Your journey begins";
 }
+document.getElementById("starting-weight").innerHTML =
+    `${startingWeight} lbs`;
+
+document.getElementById("goal-weight").innerHTML =
+    `${goalWeight} lbs`;
+
+document.getElementById("to-go").innerHTML =
+    `${currentWeight - goalWeight} lbs`;
