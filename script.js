@@ -32,8 +32,16 @@ const today = new Date();
 const difference = today - startDate;
 const days = Math.floor(difference / (1000 * 60 * 60 * 24));
 
+const formattedDate = startDate.toLocaleDateString("en-US", {
+    month: "short",
+    day: "numeric",
+    year: "numeric"
+});
+
 document.getElementById("days").innerHTML =
     `Day ${days}`;
+document.getElementById("start-date").innerHTML =
+    `since ${formattedDate}`;
 
 document.getElementById("start-date").innerHTML =
     `since ${formattedDate}`;
