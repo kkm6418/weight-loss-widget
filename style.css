@@ -133,26 +133,33 @@ body{
     filter:blur(20px);
 }
 .crown{
-    font-size:24px;
-    margin-bottom:4px;
+    font-size:20px;
+    line-height:1;
+    margin-bottom:6px;
 }
 
 .ring-weight{
-    font-size:34px;
+    font-size:28px;
     font-weight:800;
     letter-spacing:-1px;
-    line-height:1;
+    line-height:1.1;
+    color:white;
 }
 
 .ring-percent{
-    font-size:18px;
-    font-weight:600;
-    margin-top:6px;
-    color:#FFD700;
+    font-size:16px;
+    font-weight:700;
+    margin-top:5px;
+    color:white;
 }
 
 .ring-content{
-    width:140px;
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%, -50%);
+    width:150px;
+    text-align:center;
 }
 .date-section{
     margin-top:14px;
