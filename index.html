@@ -11,63 +11,57 @@
 <body>
 
 <div class="widget">
+<div class="main-row">
 
-<div class="ring">
-    <svg viewBox="0 0 180 180">
+    <!-- LEFT: Date -->
+    <div class="date-section">
 
-        <circle
-            class="circle-bg"
-            cx="90"
-            cy="90"
-            r="80">
-        </circle>
+        <div class="calendar-icon">
+            <span></span>
+        </div>
 
-        <circle
-            id="progress-ring"
-            class="circle-progress"
-            cx="90"
-            cy="90"
-            r="80">
-        </circle>
+        <div id="days" class="days"></div>
 
-    </svg>
+        <div id="start-date" class="start-date"></div>
 
-<div class="ring-content">
-
-    <div class="crown">👑</div>
-
-    <div id="weight" class="ring-weight"></div>
-
-    <div id="percent" class="ring-percent"></div>
-
-</div>
-</div>
-
-<div class="stats-row">
-    
-<div class="date-section">
-
-<div class="calendar-icon">
-    <span></span>
-</div>
-
-    <div id="days" class="days"></div>
-
-    <div id="start-date" class="start-date"></div>
-
-</div>
-
-<div class="loss-section">
-
-<div class="graph-icon">
-    <span></span>
-</div>
-
-    <div id="lost" class="lost"></div>
-
-    <div class="loss-label">
-        lost so far
     </div>
+
+
+    <!-- CENTER: Ring -->
+    <div class="ring">
+
+        <div class="ring-content">
+
+            <div class="crown">👑</div>
+
+            <div id="weight" class="weight"></div>
+
+            <div id="percent" class="percent"></div>
+
+        </div>
+
+    </div>
+
+
+    <!-- RIGHT: Lost -->
+    <div class="loss-section">
+
+        <div class="graph-icon">
+            <span></span>
+        </div>
+
+        <div id="lost" class="lost"></div>
+
+        <div class="loss-label">
+            lost so far
+        </div>
+
+    </div>
+
+</div>
+
+
+<!-- BOTTOM -->
 <div class="goal-row">
 
     <div class="goal-item">
@@ -75,10 +69,12 @@
         <div id="starting-weight" class="goal-number"></div>
     </div>
 
+
     <div class="goal-item">
         <div class="goal-label">Goal</div>
         <div id="goal-weight" class="goal-number"></div>
     </div>
+
 
     <div class="goal-item">
         <div class="goal-label">To Go</div>
@@ -86,8 +82,6 @@
     </div>
 
 </div>
-</div>
-    <div id="milestone" class="milestone"></div>
 
 </div>
 
