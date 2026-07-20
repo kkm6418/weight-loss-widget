@@ -155,3 +155,20 @@ body{
 .ring-content{
     width:140px;
 }
+.date-section{
+    margin-top:14px;
+    text-align:center;
+}
+
+.calendar-icon{
+    font-size:22px;
+    margin-bottom:4px;
+    filter:
+        drop-shadow(0 0 6px rgba(255,105,180,0.8));
+}
+
+.days{
+    color:#98989F;
+    font-size:15px;
+    letter-spacing:-0.2px;
+}
