@@ -61,3 +61,22 @@ else if (progress >= 50) {
 else {
     circle.style.stroke = "#FF6FA8";
 }
+// Milestone messages
+
+const milestone = document.getElementById("milestone");
+
+if (progress >= 100) {
+    milestone.innerHTML = "👑 Goal achieved!";
+}
+else if (progress >= 80) {
+    milestone.innerHTML = "🥇 Almost at goal!";
+}
+else if (progress >= 50) {
+    milestone.innerHTML = "💗 Halfway there!";
+}
+else if (lost >= 10) {
+    milestone.innerHTML = "✨ 10 lb milestone reached!";
+}
+else {
+    milestone.innerHTML = "🌱 Your journey begins";
+}
