@@ -12,17 +12,31 @@
 
 <div class="widget">
 
-    <div class="ring">
-        <svg>
-            <circle class="circle-bg" cx="90" cy="90" r="80"></circle>
-            <circle id="progress-ring" class="circle-progress" cx="90" cy="90" r="80"></circle>
-        </svg>
+<div class="ring">
+    <svg viewBox="0 0 180 180">
 
-        <div class="ring-content">
-            <div id="percent" class="percent"></div>
-            <div class="label">Complete</div>
-        </div>
+        <circle
+            class="circle-bg"
+            cx="90"
+            cy="90"
+            r="80">
+        </circle>
+
+        <circle
+            id="progress-ring"
+            class="circle-progress"
+            cx="90"
+            cy="90"
+            r="80">
+        </circle>
+
+    </svg>
+
+    <div class="ring-content">
+        <div id="percent" class="percent"></div>
+        <div class="label">Complete</div>
     </div>
+</div>
 
     <div id="weight" class="weight"></div>
 
