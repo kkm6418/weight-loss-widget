@@ -28,19 +28,40 @@
 
 
     <!-- CENTER: Ring -->
-    <div class="ring">
+<!-- CENTER: Ring -->
+<div class="ring">
 
-        <div class="ring-content">
+    <svg class="progress-ring" width="150" height="150">
 
-            <div class="crown">👑</div>
+        <circle
+            class="ring-background"
+            cx="75"
+            cy="75"
+            r="65">
+        </circle>
 
-            <div id="weight" class="weight"></div>
+        <circle
+            id="progress-ring"
+            class="ring-progress"
+            cx="75"
+            cy="75"
+            r="65">
+        </circle>
 
-            <div id="percent" class="percent"></div>
+    </svg>
 
-        </div>
+
+    <div class="ring-content">
+
+        <div class="crown">👑</div>
+
+        <div id="weight" class="weight"></div>
+
+        <div id="percent" class="percent"></div>
 
     </div>
+
+</div>
 
 
     <!-- RIGHT: Lost -->
