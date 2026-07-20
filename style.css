@@ -312,3 +312,29 @@ body{
     font-size:18px;
     font-weight:700;
 }
+.goal-row{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    margin-top:26px;
+    padding-top:18px;
+    border-top:1px solid rgba(255,255,255,0.08);
+}
+
+.goal-item{
+    text-align:center;
+    flex:1;
+}
+
+.goal-label{
+    color:#FFD700;
+    font-size:13px;
+    font-weight:600;
+    margin-bottom:5px;
+}
+
+.goal-number{
+    color:white;
+    font-size:18px;
+    font-weight:700;
+}
