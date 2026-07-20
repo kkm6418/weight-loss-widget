@@ -47,3 +47,17 @@ circle.style.strokeDasharray = circumference;
 const offset = circumference - (progress / 100) * circumference;
 
 circle.style.strokeDashoffset = offset;
+// Change ring color based on progress
+
+if (progress >= 100) {
+    circle.style.stroke = "#FFD700";
+}
+else if (progress >= 80) {
+    circle.style.stroke = "#FFC857";
+}
+else if (progress >= 50) {
+    circle.style.stroke = "#FF8FB1";
+}
+else {
+    circle.style.stroke = "#FF6FA8";
+}
