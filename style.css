@@ -250,3 +250,39 @@ body{
     font-size:14px;
     margin-top:3px;
 }
+.graph-icon{
+    width:30px;
+    height:26px;
+    margin:0 auto 8px;
+    border:2px solid #ff6fa8;
+    border-radius:7px;
+    position:relative;
+    background:transparent;
+    box-shadow:0 0 8px rgba(255,111,168,0.45);
+}
+
+
+/* chart line */
+.graph-icon::before{
+    content:"";
+    position:absolute;
+    width:16px;
+    height:10px;
+    left:5px;
+    bottom:6px;
+    border-left:2px solid #ff6fa8;
+    border-bottom:2px solid #ff6fa8;
+}
+
+
+/* rising line */
+.graph-icon span{
+    position:absolute;
+    width:14px;
+    height:10px;
+    left:8px;
+    top:7px;
+    border-top:2px solid #ff6fa8;
+    border-right:2px solid #ff6fa8;
+    transform:skew(-35deg);
+}
