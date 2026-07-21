@@ -1,112 +1,104 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Weight Loss Progress</title>
-
-    <link rel="stylesheet" href="style.css">
-</head>
-
-<body>
-
 <div class="widget">
-<div class="main-row">
 
-    <!-- LEFT: Date -->
-    <div class="date-section">
+    <!-- Top Section -->
+    <div class="top-section">
 
-        <div class="calendar-icon">
-            <span></span>
+        <!-- Calendar -->
+        <div class="side-panel date-panel">
+
+            <div class="calendar-icon">
+                <span></span>
+            </div>
+
+            <div id="days" class="days"></div>
+
+            <div id="start-date" class="start-date"></div>
+
         </div>
 
-        <div id="days" class="days"></div>
+        <!-- Center Ring -->
+        <div class="ring-panel">
 
-        <div id="start-date" class="start-date"></div>
+            <div class="ring">
 
-    </div>
+                <svg class="progress-ring" viewBox="0 0 200 200">
 
+                    <circle
+                        class="circle-bg"
+                        cx="100"
+                        cy="100"
+                        r="78">
+                    </circle>
 
-    <!-- CENTER: Ring -->
-<!-- CENTER: Ring -->
-<div class="ring">
+                    <circle
+                        id="circle-progress"
+                        class="circle-progress"
+                        cx="100"
+                        cy="100"
+                        r="78">
+                    </circle>
 
-    <svg class="progress-ring" width="150" height="150">
+                </svg>
 
-        <circle
-            class="ring-background"
-            cx="75"
-            cy="75"
-            r="65">
-        </circle>
+                <div class="ring-content">
 
-        <circle
-            id="progress-ring"
-            class="ring-progress"
-            cx="75"
-            cy="75"
-            r="65">
-        </circle>
+                    <div class="crown">👑</div>
 
-    </svg>
+                    <div id="weight" class="ring-weight"></div>
 
+                    <div id="percent" class="ring-percent"></div>
 
-<div class="ring-content">
+                </div>
 
-    <div class="crown">👑</div>
+            </div>
 
-    <div id="weight" class="ring-weight"></div>
-
-    <div id="percent" class="ring-percent"></div>
-
-</div>
-
-</div>
-
-
-    <!-- RIGHT: Lost -->
-    <div class="loss-section">
-
-        <div class="graph-icon">
-            <span></span>
         </div>
 
-        <div id="lost" class="lost"></div>
+        <!-- Graph -->
+        <div class="side-panel loss-panel">
 
-        <div class="loss-label">
-            lost so far
+            <div class="graph-icon">
+                <span></span>
+            </div>
+
+            <div id="lost" class="lost"></div>
+
+            <div class="loss-label">
+                lost so far
+            </div>
+
         </div>
 
     </div>
 
-</div>
+    <!-- Footer -->
 
+    <div class="footer">
 
-<!-- BOTTOM -->
-<div class="goal-row">
+        <div class="footer-item">
 
-    <div class="goal-item">
-        <div class="goal-label">Starting</div>
-        <div id="starting-weight" class="goal-number"></div>
+            <div class="footer-label">Starting</div>
+
+            <div id="starting-weight" class="footer-value"></div>
+
+        </div>
+
+        <div class="footer-item">
+
+            <div class="footer-label">Goal</div>
+
+            <div id="goal-weight" class="footer-value"></div>
+
+        </div>
+
+        <div class="footer-item">
+
+            <div class="footer-label">To Go</div>
+
+            <div id="to-go" class="footer-value"></div>
+
+        </div>
+
     </div>
 
-
-    <div class="goal-item">
-        <div class="goal-label">Goal</div>
-        <div id="goal-weight" class="goal-number"></div>
-    </div>
-
-
-    <div class="goal-item">
-        <div class="goal-label">To Go</div>
-        <div id="to-go" class="goal-number"></div>
-    </div>
-
 </div>
-
-</div>
-
-<script src="script.js"></script>
-
-</body>
-</html>
