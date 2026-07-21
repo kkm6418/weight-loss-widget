@@ -15,28 +15,27 @@ body{
 }
 
 .widget{
-    width:440px;
-    min-height:200px;
-    padding:22px 26px;
+    width:360px;
+    height:376px;
+    padding:24px;
+    background:#000;
+    border-radius:36px;
     display:flex;
     flex-direction:column;
-    justify-content:space-between;
 }
 
 
 /* Circular Progress Ring */
 
 .ring{
-    width:180px;
-    height:180px;
-    margin:0 auto 20px;
+    width:150px;
+    height:150px;
     position:relative;
 }
 
 .ring svg{
-    width:190px;
-    height:190px;
-    transform:rotate(-90deg);
+    width:150px;
+    height:150px;
 }
 
 
@@ -132,25 +131,18 @@ body{
     background:rgba(255,215,0,0.15);
     filter:blur(20px);
 }
-.crown{
-    font-size:20px;
-    line-height:1;
-    margin-bottom:6px;
-}
-
 .ring-weight{
-    font-size:28px;
+    font-size:32px;
     font-weight:800;
-    letter-spacing:-1px;
-    line-height:1.1;
-    color:white;
 }
 
 .ring-percent{
     font-size:16px;
     font-weight:700;
-    margin-top:5px;
-    color:white;
+}
+
+.crown{
+    font-size:20px;
 }
 
 .ring-content{
@@ -237,11 +229,8 @@ body{
 
 .date-section,
 .loss-section{
+    width:80px;
     text-align:center;
-}
-
-.loss-section{
-    min-width:90px;
 }
 
 .lost{
@@ -300,6 +289,10 @@ body{
     padding-top:18px;
     border-top:1px solid rgba(255,255,255,0.08);
 }
+.goal-row{
+    border-top:1px solid rgba(255,255,255,.12);
+    padding-top:20px;
+}
 
 .goal-item{
     text-align:center;
@@ -331,7 +324,6 @@ body{
 .goal-item{
     flex:1;
     text-align:center;
-    min-width:0;
 }
 
 .goal-label{
@@ -349,7 +341,7 @@ body{
 }
 .main-row{
     display:flex;
-    align-items:center;
     justify-content:space-between;
+    align-items:center;
     flex:1;
 }
