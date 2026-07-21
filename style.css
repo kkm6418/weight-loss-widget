@@ -248,3 +248,9 @@ body{
     letter-spacing:.8px;
 
 }
+.circle{
+    width:180px !important;
+    height:180px !important;
+    background:red !important;
+    border-radius:50% !important;
+}
