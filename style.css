@@ -1,347 +1,96 @@
+/* ===========================
+   RESET
+=========================== */
+
 *{
     margin:0;
     padding:0;
     box-sizing:border-box;
 }
 
+:root{
+    --bg:#000000;
+    --card:#0A0A0A;
+    --gold:#F4C542;
+    --gold-light:#FFE38A;
+    --pink:#FF6FA8;
+    --white:#FFFFFF;
+    --gray:#9A9A9A;
+    --track:#262626;
+}
+
 body{
-    background:#000;
-    color:white;
-    font-family:-apple-system, BlinkMacSystemFont, "SF Pro Display", sans-serif;
+    background:var(--bg);
     display:flex;
     justify-content:center;
     align-items:center;
     min-height:100vh;
+    font-family:-apple-system,BlinkMacSystemFont,"SF Pro Display",sans-serif;
+    color:var(--white);
 }
-
 .widget{
+
     width:360px;
     height:376px;
-    padding:24px;
+
     background:#000;
+
     border-radius:36px;
+
+    padding:24px;
+
     display:flex;
     flex-direction:column;
+
+    justify-content:space-between;
 }
+.top-section{
 
+    display:flex;
 
-/* Circular Progress Ring */
+    align-items:center;
+
+    justify-content:space-between;
+
+    flex:1;
+}
+.side-panel{
+
+    width:74px;
+
+    display:flex;
+
+    flex-direction:column;
+
+    align-items:center;
+
+    justify-content:center;
+
+    text-align:center;
+}
+.ring-panel{
+
+    flex:1;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+}
 
 .ring{
-    width:150px;
-    height:150px;
+
+    width:180px;
+
+    height:180px;
+
     position:relative;
 }
 
-.ring svg{
-    width:150px;
-    height:150px;
-}
+.progress-ring{
 
+    width:180px;
 
-/* Background circle */
-
-.circle-bg{
-    fill:none;
-    stroke:#2C2C2E;
-    stroke-width:12;
-}
-
-
-/* Progress circle */
-
-.circle-progress{
-    fill:none;
-    stroke:#FFD700;
-    stroke-width:12;
-    stroke-linecap:round;
-    transition:stroke-dashoffset .8s ease;
-  filter:
-    drop-shadow(0 0 8px rgba(255,126,179,0.8))
-    drop-shadow(0 0 12px rgba(255,215,0,0.45));
-}
-
-
-/* Center text */
-
-.ring-content{
-    position:absolute;
-    top:50%;
-    left:50%;
-    transform:translate(-50%, -50%);
-}
-
-.percent{
-    font-size:36px;
-    font-weight:800;
-    letter-spacing:-1px;
-    background:linear-gradient(135deg,#ff9a9e,#FFD700);
-    -webkit-background-clip:text;
-    -webkit-text-fill-color:transparent;
-}
-
-.label{
-    font-size:14px;
-    color:#8E8E93;
-    margin-top:2px;
-}
-
-
-/* Weight */
-
-.weight{
-    font-size:44px;
-    font-weight:750;
-    letter-spacing:-1.5px;
-    margin-bottom:8px;
-}
-
-
-/* Gold accent */
-
-.weight::after{
-    content:" ✨";
-    font-size:24px;
-}
-
-
-/* Details */
-
-.days,
-.lost{
-    color:#98989F;
-    font-size:15px;
-    margin-top:5px;
-    letter-spacing:-0.2px;
-}
-.milestone{
-    margin-top:12px;
-    font-size:15px;
-    color:#FFD700;
-    font-weight:600;
-}
-.ring::after{
-    content:"";
-    position:absolute;
-    width:120px;
-    height:20px;
-    bottom:-10px;
-    left:50%;
-    transform:translateX(-50%);
-    background:rgba(255,215,0,0.15);
-    filter:blur(20px);
-}
-.ring-weight{
-    font-size:32px;
-    font-weight:800;
-}
-
-.ring-percent{
-    font-size:16px;
-    font-weight:700;
-}
-
-.crown{
-    font-size:20px;
-}
-
-.ring-content{
-    position:absolute;
-    top:50%;
-    left:50%;
-    transform:translate(-50%, -50%);
-    width:150px;
-    text-align:center;
-}
-.date-section{
-    margin-top:14px;
-    text-align:center;
-}
-
-.calendar-icon{
-    width:28px;
-    height:26px;
-    margin:0 auto 8px;
-    border:2px solid #ff6fa8;
-    border-radius:7px;
-    position:relative;
-    background:transparent;
-    box-shadow:0 0 8px rgba(255,111,168,0.45);
-}
-
-/* calendar top rings */
-.calendar-icon::before,
-.calendar-icon::after{
-    content:"";
-    position:absolute;
-    top:-6px;
-    width:5px;
-    height:10px;
-    border:2px solid #ff6fa8;
-    border-radius:4px;
-    background:#000;
-}
-
-.calendar-icon::before{
-    left:6px;
-}
-
-.calendar-icon::after{
-    right:6px;
-}
-
-/* calendar divider */
-.calendar-icon span{
-    position:absolute;
-    left:4px;
-    right:4px;
-    top:8px;
-    height:1px;
-    background:#ff6fa8;
-}
-
-.days{
-    color:#98989F;
-    font-size:15px;
-    letter-spacing:-0.2px;
-}
-.start-date{
-    color:#98989F;
-    font-size:14px;
-    margin-top:2px;
-}
-.loss-section{
-    text-align:center;
-}
-
-.loss-label{
-    color:#98989F;
-    font-size:14px;
-    margin-top:3px;
-}
-.stats-row{
-    display:flex;
-    justify-content:space-between;
-    align-items:center;
-    margin-top:22px;
-    padding:0 18px;
-}
-
-.date-section,
-.loss-section{
-    width:80px;
-    text-align:center;
-}
-
-.lost{
-    font-size:22px;
-    font-weight:700;
-    color:white;
-    letter-spacing:-0.5px;
-}
-
-.loss-label{
-    color:#98989F;
-    font-size:14px;
-    margin-top:3px;
-}
-.graph-icon{
-    width:30px;
-    height:26px;
-    margin:0 auto 8px;
-    border:2px solid #ff6fa8;
-    border-radius:7px;
-    position:relative;
-    background:transparent;
-    box-shadow:0 0 8px rgba(255,111,168,0.45);
-}
-
-
-/* chart line */
-.graph-icon::before{
-    content:"";
-    position:absolute;
-    width:16px;
-    height:10px;
-    left:5px;
-    bottom:6px;
-    border-left:2px solid #ff6fa8;
-    border-bottom:2px solid #ff6fa8;
-}
-
-
-/* rising line */
-.graph-icon span{
-    position:absolute;
-    width:14px;
-    height:10px;
-    left:8px;
-    top:7px;
-    border-top:2px solid #ff6fa8;
-    border-right:2px solid #ff6fa8;
-    transform:skew(-35deg);
-}
-.goal-row{
-    display:flex;
-    justify-content:space-between;
-    align-items:center;
-    margin-top:26px;
-    padding-top:18px;
-    border-top:1px solid rgba(255,255,255,0.08);
-}
-.goal-row{
-    border-top:1px solid rgba(255,255,255,.12);
-    padding-top:20px;
-}
-
-.goal-item{
-    text-align:center;
-    flex:1;
-}
-
-.goal-label{
-    color:#FFD700;
-    font-size:13px;
-    font-weight:600;
-    margin-bottom:5px;
-}
-
-.goal-number{
-    color:white;
-    font-size:18px;
-    font-weight:700;
-}
-.goal-row{
-    display:flex;
-    justify-content:space-around;
-    align-items:center;
-    margin-top:24px;
-    padding-top:16px;
-    border-top:1px solid rgba(255,255,255,0.08);
-    width:100%;
-}
-
-.goal-item{
-    flex:1;
-    text-align:center;
-}
-
-.goal-label{
-    color:#FFD700;
-    font-size:12px;
-    font-weight:600;
-    margin-bottom:6px;
-}
-
-.goal-number{
-    color:white;
-    font-size:15px;
-    font-weight:700;
-    white-space:nowrap;
-}
-.main-row{
-    display:flex;
-    justify-content:space-between;
-    align-items:center;
-    flex:1;
+    height:180px;
 }
