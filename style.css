@@ -106,7 +106,35 @@ body{
     stroke:var(--track);
     stroke-width:14;
 }
+.circle{
+    width:180px;
+    height:180px;
+    border-radius:50%;
+    background:
+        conic-gradient(
+            #FF6FA8 0deg,
+            #F4C542 270deg,
+            #262626 270deg
+        );
 
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+.circle::before{
+    content:"";
+    width:148px;
+    height:148px;
+    background:#000;
+    border-radius:50%;
+    position:absolute;
+}
+
+
+.circle-fill{
+    position:absolute;
+}
 /* Animated pink/gold progress */
 .progress-ring-progress{
     fill:none;
