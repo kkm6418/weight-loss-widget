@@ -105,11 +105,11 @@ body{
     fill:none;
     stroke:var(--track);
     stroke-width:14;
-}
 .circle{
     width:180px;
     height:180px;
     border-radius:50%;
+
     background:
         conic-gradient(
             #FF6FA8 0deg,
@@ -120,14 +120,21 @@ body{
     display:flex;
     justify-content:center;
     align-items:center;
+
+    position:relative;
 }
 
 .circle::before{
+
     content:"";
+
     width:148px;
     height:148px;
+
     background:#000;
+
     border-radius:50%;
+
     position:absolute;
 }
 
